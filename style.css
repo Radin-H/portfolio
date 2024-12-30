@@ -62,6 +62,10 @@ p {
     align-items: center;
 }
 
+.header {
+    padding: 0% 0;
+}
+
 .animate-pulse {
     animation-duration: 3s;
     animation-timing-function: ease-in-out;
@@ -141,6 +145,10 @@ mark {
     }
 
     .page {
-        padding: 5% 10%;
+        padding: 10% 10%;
+    }
+
+    .pt {
+        padding: 0;
     }
 }

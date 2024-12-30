@@ -12,17 +12,19 @@
     </style>
 </head>
 <div class="page">
-    <div class="name">
-        <h1>Radin Hakimjavadi</h1>
-        <span class="animate-pulse dot"></span>
+    <div class="header">
+        <div class="name">
+            <h1>Radin Hakimjavadi</h1>
+            <span class="animate-pulse dot"></span>
+        </div>
+        <div id="current_date">
+            <script>
+                const options = {year: 'numeric', month: 'long', day: 'numeric' };
+                document.getElementById("current_date").innerHTML = new Date().toLocaleDateString('en-US', options);
+            </script>
+        </div>
+        <span><img src="pin.svg" class="inline-image" alt="pin">Toronto, ON</span>
     </div>
-    <div id="current_date">
-        <script>
-            const options = {year: 'numeric', month: 'long', day: 'numeric' };
-            document.getElementById("current_date").innerHTML = new Date().toLocaleDateString('en-US', options);
-        </script>
-    </div>
-    <span><img src="pin.svg" class="inline-image" alt="pin">Toronto, ON</span>
 <body onload="document.body.style.opacity='1'">
     <br>
 <div class="container">
