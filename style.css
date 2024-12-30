@@ -11,12 +11,23 @@ body {
     font-family: 'Geist';
     font-size: 18px;
     font-weight: 200;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
+    opacity: 1;
+    animation-name: fadeIn;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 0.3s;
 }
 
-body.loaded {
-    opacity: 1;
+@keyframes fadeIn {
+    0% {
+        opacity: 0.01;
+    }
+    1% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 h1 {
