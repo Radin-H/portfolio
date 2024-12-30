@@ -139,4 +139,8 @@ mark {
     .blocks {
         grid-template-rows: 30vh;
     }
+
+    .page {
+        padding: 5% 10%;
+    }
 }
