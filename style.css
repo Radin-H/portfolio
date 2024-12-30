@@ -12,7 +12,11 @@ body {
     font-size: 18px;
     font-weight: 200;
     opacity: 0;
-    transition: opacity 0.5s;
+    transition: opacity 0.5s ease-in-out;
+}
+
+body.loaded {
+    opacity: 1;
 }
 
 h1 {
