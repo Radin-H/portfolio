@@ -40,4 +40,155 @@ body {
 
 	100% {
 		opacity: 1;
-	
+	}
+}
+
+h1 {
+	font-family: 'Geist';
+	font-size: 26px;
+	font-weight: 600;
+}
+
+.container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	resize: both;
+}
+
+.centered {
+	max-width: 100%;
+	flex: 1 1 50%;
+    margin: 1em 0;
+}
+
+.pt {
+	max-width: 50vh;
+	width: 100%;
+	align-self: flex-start;
+	padding: 1em 5% 0 5%;
+}
+
+.image {
+	text-align: center;
+	position: sticky;
+	top: 10%;
+}
+
+.caption {
+	display: block;
+	font-size: 14px;
+	color: gray;
+}
+
+p {
+	line-height: 150%;
+	margin: 1em 0px;
+}
+
+.name {
+	display: flex;
+	align-items: center;
+}
+
+.header {
+	padding: 0% 0;
+}
+
+.animate-pulse {
+	animation-duration: 3s;
+	animation-timing-function: ease-in-out;
+	animation-delay: 0s;
+	animation-iteration-count: infinite;
+	animation-direction: normal;
+	animation-fill-mode: none;
+	animation-play-state: running;
+	animation-name: pulse;
+}
+
+@keyframes pulse {
+	0% {
+		opacity: 1;
+	}
+
+	50% {
+		opacity: 0.2;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+.dot {
+	height: 15px;
+	width: 15px;
+	background-color: black;
+	border-radius: 50%;
+	display: inline-block;
+	margin: 0 0.5%;
+}
+
+mark {
+	background-color: transparent;
+	color: black;
+	transition: background-color 0.34s ease;
+}
+
+mark:hover {
+	background-color: black;
+	color: white;
+}
+
+a.links {
+	height: 100%;
+	width: 100%;
+	text-decoration-line: none;
+	border-bottom: 0.3px solid #000;
+}
+
+.blocks {
+	display: grid;
+	grid-template-rows: 88vh 1fr 1fr;
+}
+
+.inline-image {
+	vertical-align: text-bottom;
+	/* Aligns better with the text baseline */
+	width: 1em;
+	/* Keeps the aspect ratio */
+	margin: 0.15em 0;
+	/* Adds equal spacing around the image */
+}
+
+strong {
+	font-style: normal;
+	font-weight: 500;
+}
+
+/* Media query to handle layout for small screens */
+@media (max-width: 768px) {
+	.container {
+		flex-direction: column;
+		/* Stack text and image vertically */
+	}
+
+	img {
+		padding-left: 0;
+		/* Center the image in the column layout */
+		max-width: 100%;
+		/* Adjust image size for small screens */
+	}
+
+	.blocks {
+		grid-template-rows: 30vh;
+	}
+
+	.page {
+		padding: 10% 10%;
+	}
+
+	.pt {
+		padding: 0;
+	}
+}
